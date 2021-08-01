@@ -27,6 +27,6 @@ export class UserService {
   }
 
   addUser(formValue: any) {
-    return this.httpClient.post(`${this.baseUrl}/articles`, formValue)
+    return this.httpClient.post(`${this.baseUrl}/users`, formValue)
   }
 }

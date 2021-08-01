@@ -7,6 +7,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatDialogModule} from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
+
 
 @NgModule({
   declarations: [],
@@ -18,15 +22,23 @@ import { MatDividerModule } from '@angular/material/divider';
     HttpClientModule,
     MatButtonModule,
     MatIconModule,
-    MatDividerModule
-  ],
+    MatDividerModule,
+    MatFormFieldModule,
+    MatDialogModule,
+    MatInputModule,
+      ],
   exports: [
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
     MatButtonModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule
+
+
   ]
 })
 export class SharedModule { }

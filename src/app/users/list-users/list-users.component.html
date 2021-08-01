@@ -1,0 +1,45 @@
+<form class="text-center example-form" style="color: #757575;">
+  <div class="search-hero">
+    <input class="form-control" type="text" name="search" [(ngModel)]="selectedPartner" autocomplete="off" placeholder="&#61442;  Start searching for a Product by id ....">
+</div>
+<!-- <mat-form-field class="example-full-width" appearance="fill" [(ngModel)]="selectedPartner" [ngModelOptions]="{standalone: true}">
+  <mat-label>Start searching for a Product by id ....</mat-label>
+  <textarea matInput placeholder="Tape Something"></textarea>
+</mat-form-field> -->
+<div id="SkillBox">
+  <table mat-table class="mat-elevation-z8">
+    <caption>List of Users</caption>
+    <ng-container container matColumnDef="position">
+      <thead>
+
+        <tr class="table-info">
+          <th>Id</th>
+          <th>Name</th>
+          <th>Prenom</th>
+          <th>login</th>
+          <th>Password  </th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let article of registartions">
+          <th mat-cell>{{article?.id}}</th>
+          <td mat-cell >{{article?.nom}}</td>
+          <td  mat-cell>{{article?.prenom}}</td>
+          <td  mat-cell>{{article?.login}}</td>
+          <td  mat-cell>{{article?.password}}</td>
+          <td>
+            <div class="example-button-container">
+          <button type="button" [routerLink]="['/updateArticle',article?.id]" mat-raised-button color="primary">Update</button>
+
+            <button mat-mini-fab color="warn" aria-label="Example icon button with a delete icon" (click)="onDelete(article?.id)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </ng-container>
+</table>
+</div>
+</form>

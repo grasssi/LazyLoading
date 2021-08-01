@@ -1,0 +1,45 @@
+table {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+@font-face {
+  font-family: lato;
+  src: url(../../../assets/Sertig.otf) format("opentype");
+}
+#SkillBox {
+  font-size: 20px;
+  font-family: 'lato', cursive;
+  width: 95%;
+  height: auto;
+  margin: 40px auto;
+
+  border: 1px solid #cdcdcd;
+  padding: 10px;
+  border-radius:20px;
+  -o-border-radius:20px;
+  -webkit-border-radius:20px;
+  -ms-border-radius:20px;
+  -moz-border-radius:20px;
+   background-color: #D8F0DA;
+   min-width: 100%;
+  position: relative;
+  opacity: 0.97;
+  background: transparent;
+}
+#SkillBox img {
+  width: 20%;
+  height: 10%;
+  margin: auto 35%;
+  padding: 10px;
+}
+.bg {
+  /* The image used */
+  background-image: url("../../../assets/img4.jpg");
+  /* Full height */
+  height: auto;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

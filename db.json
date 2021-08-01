@@ -1,4 +1,19 @@
 {
-  "users": [],
+  "users": [
+    {
+      "nom": "SS",
+      "prenom": "SS",
+      "login": "SS",
+      "password": "SS",
+      "id": 3
+    },
+    {
+      "nom": "aa",
+      "prenom": "aa",
+      "login": "aa",
+      "password": "aa",
+      "id": 4
+    }
+  ],
   "courses": []
 }
